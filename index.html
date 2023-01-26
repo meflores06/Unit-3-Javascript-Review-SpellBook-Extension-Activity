@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html><head>
+        <title>Unit 3 Javascript Review: SpellBook -Extension Activity</title>
+    <style>img {
+    width: 250px;
+}
+
+.rabbit {
+    display: none;
+}
+
+.mario{
+    display:none;
+}</style></head>
+    <body>
+        <h1>Spell #1</h1>
+        <img class="rabbit" src="https://i0.wp.com/www.sayanythingblog.com/wp-content/uploads/2013/06/rabbit-in-hat-27972.jpg?w=1280&amp;ssl=1">
+        <button class="spell-onebutton">Appear!</button>
+        
+        <h1>Spell #2</h1>
+        <h3 class="header-2">Make this text change when you click the button </h3>
+        <button class="spell-twobutton"> Click Me to change text </button>
+        <h1>Spell #3</h1>
+        <p>Click the magic words to change the background color</p>
+        <button class="spell-threebutton">Abracadabra!</button>
+        <h1>Spell #4</h1>
+         <button class="spell-4button">MARIO!!!</button>
+        <img class="mario" src="https://drpaleynoung.files.wordpress.com/2014/09/supermario_hlq6z1q4.gif">
+    
+
+
+
+<script>
+/*__POPCODESTART__*/
+var rabbit = document.querySelector(".rabbit");
+var spell1button = document.querySelector(".spell-onebutton");
+var spell2 = document.querySelector(".header-2");
+var spell2button = document.querySelector(".spell-twobutton");
+var spell3button = document.querySelector(".spell-threebutton");
+var body = document.querySelector("body");
+var spell4button = document.querySelector(".spell-4button");
+var mario = document.querySelector(".mario");
+
+spell1button.onclick = function () {
+  rabbit.style.display = "block";
+};
+
+spell2button.onclick = function () {
+  spell2.innerHTML = "Hello";
+};
+
+spell3button.onclick = function () {
+  body.style.backgroundColor = "#d3b0f5";
+};
+
+spell4button.onclick = function () {
+  mario.style.display = "block";
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInJhYmJpdCIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInNwZWxsMWJ1dHRvbiIsInNwZWxsMiIsInNwZWxsMmJ1dHRvbiIsInNwZWxsM2J1dHRvbiIsImJvZHkiLCJzcGVsbDRidXR0b24iLCJtYXJpbyIsIm9uY2xpY2siLCJzdHlsZSIsImRpc3BsYXkiLCJpbm5lckhUTUwiLCJiYWNrZ3JvdW5kQ29sb3IiXSwibWFwcGluZ3MiOiJBQUNBLElBQUlBLE1BQU0sR0FBQ0MsUUFBUSxDQUFDQyxhQUFULENBQXdCLFNBQXhCLENBQVg7QUFDQSxJQUFJQyxZQUFZLEdBQUNGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF3QixrQkFBeEIsQ0FBakI7QUFDQSxJQUFJRSxNQUFNLEdBQUNILFFBQVEsQ0FBQ0MsYUFBVCxDQUF3QixXQUF4QixDQUFYO0FBQ0EsSUFBSUcsWUFBWSxHQUFDSixRQUFRLENBQUNDLGFBQVQsQ0FBd0Isa0JBQXhCLENBQWpCO0FBQ0EsSUFBSUksWUFBWSxHQUFDTCxRQUFRLENBQUNDLGFBQVQsQ0FBd0Isb0JBQXhCLENBQWpCO0FBQ0EsSUFBSUssSUFBSSxHQUFDTixRQUFRLENBQUNDLGFBQVQsQ0FBd0IsTUFBeEIsQ0FBVDtBQUNBLElBQUlNLFlBQVksR0FBQ1AsUUFBUSxDQUFDQyxhQUFULENBQXVCLGdCQUF2QixDQUFqQjtBQUNBLElBQUlPLEtBQUssR0FBQ1IsUUFBUSxDQUFDQyxhQUFULENBQXVCLFFBQXZCLENBQVY7O0FBRUFDLFlBQVksQ0FBQ08sT0FBYixHQUFxQixZQUFVO0FBQzNCVixFQUFBQSxNQUFNLENBQUNXLEtBQVAsQ0FBYUMsT0FBYixHQUFxQixPQUFyQjtBQUNILENBRkQ7O0FBSUFQLFlBQVksQ0FBQ0ssT0FBYixHQUFxQixZQUFVO0FBQzNCTixFQUFBQSxNQUFNLENBQUNTLFNBQVAsR0FBaUIsT0FBakI7QUFDSCxDQUZEOztBQUlBUCxZQUFZLENBQUNJLE9BQWIsR0FBcUIsWUFBVTtBQUMzQkgsRUFBQUEsSUFBSSxDQUFDSSxLQUFMLENBQVdHLGVBQVgsR0FBMkIsU0FBM0I7QUFDSCxDQUZEOztBQUlBTixZQUFZLENBQUNFLE9BQWIsR0FBcUIsWUFBVTtBQUMzQkQsRUFBQUEsS0FBSyxDQUFDRSxLQUFOLENBQVlDLE9BQVosR0FBb0IsT0FBcEI7QUFDSCxDQUZEIiwic291cmNlc0NvbnRlbnQiOlsiXG5sZXQgcmFiYml0PWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IgKFwiLnJhYmJpdFwiKTtcbmxldCBzcGVsbDFidXR0b249ZG9jdW1lbnQucXVlcnlTZWxlY3RvciAoXCIuc3BlbGwtb25lYnV0dG9uXCIpO1xubGV0IHNwZWxsMj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yIChcIi5oZWFkZXItMlwiKTtcbmxldCBzcGVsbDJidXR0b249ZG9jdW1lbnQucXVlcnlTZWxlY3RvciAoXCIuc3BlbGwtdHdvYnV0dG9uXCIpO1xubGV0IHNwZWxsM2J1dHRvbj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yIChcIi5zcGVsbC10aHJlZWJ1dHRvblwiKTtcbmxldCBib2R5PWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IgKFwiYm9keVwiKTtcbmxldCBzcGVsbDRidXR0b249ZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5zcGVsbC00YnV0dG9uXCIpO1xubGV0IG1hcmlvPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubWFyaW9cIik7XG5cbnNwZWxsMWJ1dHRvbi5vbmNsaWNrPWZ1bmN0aW9uKCl7XG4gICAgcmFiYml0LnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xufTtcblxuc3BlbGwyYnV0dG9uLm9uY2xpY2s9ZnVuY3Rpb24oKXtcbiAgICBzcGVsbDIuaW5uZXJIVE1MPVwiSGVsbG9cIjtcbn07XG5cbnNwZWxsM2J1dHRvbi5vbmNsaWNrPWZ1bmN0aW9uKCl7XG4gICAgYm9keS5zdHlsZS5iYWNrZ3JvdW5kQ29sb3I9XCIjZDNiMGY1XCI7XG59O1xuXG5zcGVsbDRidXR0b24ub25jbGljaz1mdW5jdGlvbigpe1xuICAgIG1hcmlvLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xufTtcblxuIl19</script></body></html>
